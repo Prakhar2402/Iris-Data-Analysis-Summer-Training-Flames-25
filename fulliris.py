@@ -193,13 +193,14 @@ data['petal_size'] = pd.cut(data['petal_length'], bins=[0,2,4,7], labels=['Small
 print(data.head())
 sns.countplot(x='petal_size', hue='Species', data=data)
 plt.show()
-data['species'] = LabelEncoder.fit_transform(data['Species'])
+label_encoder = LabelEncoder()
+data['species'] = label_encoder.fit_transform(data['Species'])
 print(data['species'])
-for i, class_label in enumerate(LabelEncoder.classes_):
+for i, class_label in enumerate(label_encoder.classes_):
     print(f"{i} → {class_label}")
-data['petal_size'] = LabelEncoder.fit_transform(data['petal_size'])
+data['petal_size'] = label_encoder.fit_transform(data['petal_size'])
 print(data.head())
-for i, class_label in enumerate(LabelEncoder.classes_):
+for i, class_label in enumerate(label_encoder.classes_):
     print(f"{i} → {class_label}")
 
 # Splitting data into training and testing sets to evaluate model performance.
