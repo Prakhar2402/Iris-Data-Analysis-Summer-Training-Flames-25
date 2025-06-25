@@ -1,10 +1,11 @@
-# Iris-Data-Analysis-Summer-Training-Flames-25
+🌸 Iris-Data-Analysis-Summer-Training-Flames-25
+🌼 Iris Dataset Analysis & KNN Classification
+This project is developed as part of my Summer Training under the guidance of Ms. Gaurika Dhingra Ma’am, hosted on the Flames'25 platform. I’m proud to be a part of the Angaar Batch during this program.
 
-🌸 Iris Dataset Analysis & KNN Classification
-This project is developed as a part of my Summer Training under the guidance of Ms. Gaurika Dhingra Mam on the Flames'25 platform, as a proud member of the Angaar Batch. The goal of this project is to explore, analyze, and build a classification model using the Iris dataset and the K-Nearest Neighbors (KNN) algorithm.
+The primary goal is to explore, analyze, and build a classification model using the Iris dataset and the K-Nearest Neighbors (KNN) algorithm.
 
 📂 Dataset
-The dataset consists of 150 samples of iris flowers across three species, with the following features:
+The dataset contains 150 samples of iris flowers across three species, with the following features:
 
 sepal_length (cm)
 
@@ -16,25 +17,25 @@ petal_width (cm)
 
 Species (Iris-setosa, Iris-versicolor, Iris-virginica)
 
-Dataset used: Iris.csv (included in this repository)
+📁 Dataset used: Iris.csv (included in this repository)
 
-🔍 What This Project Covers ->
+🔍 What This Project Covers
 📊 Exploratory Data Analysis (EDA)
-View dataset structure and summary.
+Viewed dataset structure and summary
 
-Handle missing values and duplicate records.
+Handled missing values and duplicate records
 
-Explore statistical patterns using .describe(), .info(), .nunique().
+Explored patterns using .describe(), .info(), .nunique()
 
 🧼 Data Preprocessing
-Cleaned column names for simplicity.
+Cleaned and renamed columns for clarity
 
-Dropped irrelevant columns like Id.
+Dropped irrelevant columns like Id
 
-Removed outliers from sepal_width using the IQR method.
+Removed outliers in sepal_width using IQR method
 
 📈 Data Visualization
-Used Seaborn and Matplotlib to visualize:
+Visualized using Seaborn and Matplotlib:
 
 Class-wise distribution
 
@@ -42,84 +43,86 @@ Box plots, violin plots
 
 Histograms, scatter plots, pair plots
 
-Insight:
+💡 Insight:
 
-Petal length and width are the most effective features in distinguishing species.
+petal_length and petal_width are the most significant features for classification.
 
-Iris-setosa is clearly distinguishable; versicolor and virginica show partial overlap.
+Iris-setosa is clearly distinguishable.
+
+Iris-versicolor and Iris-virginica show partial overlap.
 
 🧠 Feature Engineering
-Created new features:
+Created new features to enhance classification:
 
 sepal_ratio = sepal_length / sepal_width
 
 petal_ratio = petal_length / petal_width
 
-petal_size (categorized into small, medium, large using binning)
+petal_size = categorical binning (Small / Medium / Large)
 
-Insight:
+💡 Insight:
 
-Iris-setosa has a high petal ratio and low sepal ratio, making it structurally distinct.
+Setosa has a high petal ratio and low sepal ratio, structurally distinct
 
-Virginica usually has higher ratios than versicolor.
+Virginica generally has higher ratios than Versicolor
 
 🏷️ Label Encoding
-Encoded categorical variables (Species and petal_size) to numeric form using LabelEncoder.
+Encoded Species and petal_size using LabelEncoder for modeling
 
 🤖 Model Training: K-Nearest Neighbors
-Split the dataset into training and test sets.
+Split data into train/test sets
 
-Trained and evaluated KNN models with k = 3, 5, and 9.
+Trained KNN models with k = 3, 5, 9
 
-Compared performance using accuracy and classification reports.
+Evaluated models using accuracy and classification reports
 
 📊 Accuracy vs K Plot
-Plotted accuracy score for k = 1 to 19.
+Plotted accuracy scores for k = 1 to 19
 
-Found that k = 5 provides the best accuracy.
+Found k = 5 yields the best result
 
 📌 Summary of Findings
-Iris-setosa is easily separable from other species.
+Iris-setosa is easily separable due to distinct petal dimensions
 
-Petal length and width are strong classification features.
+Petal length and Petal width are the strongest classification features
 
-Feature engineering significantly improved separation between overlapping classes.
+Feature engineering helped reduce overlap between similar species
 
-KNN performed best at k = 5, achieving high accuracy.
+KNN at k = 5 gave the highest accuracy
 
 💻 Technologies Used
 Python 3
 
-Pandas and NumPy for data handling
+Pandas, NumPy for data handling
 
-Seaborn and Matplotlib for visualization
+Seaborn, Matplotlib for visualization
 
-Scikit-learn for model building and evaluation
+Scikit-learn for modeling and metrics
 
-🧾 How to Run the Project:
-
+🧾 How to Run the Project
 Clone the repository
-
-Install required libraries:
+git clone https://github.com/prakhar2402/Iris-Data-Analysis-Summer-Training-Flames-25.git
+Install required libraries
 
 pip install pandas numpy matplotlib seaborn scikit-learn
+Run the script
 
-Run the Python script:
 python iris_knn_analysis.py
-
 🎓 Training Details
 Project Title: Iris Dataset Analysis and Classification using KNN
 
-Mentor: Ms. Gaurika Dhingra
+Mentor: Ms. Gaurika Dhingra Mam
 
-Conducted by : Flames'25
+Platform: Flames'25
 
 Batch: Angaar Batch
 
 Training Type: Summer Training Program (Data Science / ML)
 
+Institution: Lovely Professional University (LPU)
+
 📚 Credits
-Dataset Source: Iris Dataset
+Dataset Source: UCI Iris Dataset
 
 Guided by: Ms. Gaurika Dhingra Mam
 
@@ -127,3 +130,9 @@ Conducted by: Flames'25
 
 Batch: Angaar Batch
 
+📬 Connect With Me
+🔗 LinkedIn: https://www.linkedin.com/in/prakhar-gupta-366449280/
+
+📧 Email: prakhargupta00123456@gmail.com
+
+⭐ If you found this project helpful, don’t forget to give it a star!
