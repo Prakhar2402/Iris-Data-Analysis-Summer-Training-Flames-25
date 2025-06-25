@@ -96,11 +96,14 @@ Seaborn and Matplotlib for visualization
 
 Scikit-learn for model building and evaluation
 
-🧾 How to Run the Project
+🧾 How to Run the Project:
+
 Clone the repository
 
 Install required libraries:
+
 pip install pandas numpy matplotlib seaborn scikit-learn
+
 Run the Python script:
 python iris_knn_analysis.py
 
